@@ -1,0 +1,38 @@
+{
+  "name": "vscode-noulith",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo OK"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vscode-languageclient": "^8.0.2"
+  },
+  "engines": {
+    "vscode": "^1.65.0"
+  },
+  "activationEvents": [
+    "onLanguage:noulith"
+  ],
+  "configurationDefaults": {
+    "noulith": {
+      "editor.semanticHighlighting.enabled": true
+    }
+  },
+  "contributes": {
+    "languages": [
+      {
+        "id": "noulith",
+        "aliases": [
+          "noulith"
+        ],
+        "extensions": [
+          ".noul"
+        ]
+      }
+    ]
+  }
+}

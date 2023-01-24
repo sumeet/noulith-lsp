@@ -1,0 +1,11 @@
+[package]
+name = "noulith-lsp"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+noulith = {git = "https://github.com/betaveros/noulith", branch = "main"}
+tower-lsp = "*"
+tokio = {version = "*", features = ["io-std", "macros", "rt-multi-thread"]}
